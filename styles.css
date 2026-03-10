@@ -170,6 +170,44 @@ body::before {
   background: rgba(0, 0, 0, 0.33);
 }
 
+.manifesto {
+  display: grid;
+  grid-template-columns: 1.22fr 0.78fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.manifesto-copy,
+.manifesto-quote {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--panel-border);
+  background: var(--bg-soft);
+}
+
+.manifesto-copy {
+  padding: 1.2rem 1.3rem;
+}
+
+.manifesto-copy p {
+  margin: 0 0 0.7rem;
+  color: var(--muted);
+}
+
+.manifesto-quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  background: linear-gradient(160deg, rgba(215, 164, 104, 0.16) 0%, rgba(40, 62, 51, 0.22) 100%);
+}
+
+.manifesto-quote p {
+  margin: 0;
+  font-family: "Syne", sans-serif;
+  font-size: clamp(1.12rem, 2.2vw, 1.46rem);
+  line-height: 1.25;
+}
+
 main > section {
   padding: 3.1rem 0;
 }
@@ -302,6 +340,30 @@ main > section {
   font-size: 0.93rem;
 }
 
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.value-card {
+  border-radius: 0.95rem;
+  padding: 1rem;
+  border: 1px solid #4f6658;
+  background: linear-gradient(160deg, rgba(127, 159, 137, 0.12) 0%, rgba(13, 19, 16, 0.9) 100%);
+}
+
+.value-card h3 {
+  margin: 0 0 0.35rem;
+  font-family: "Syne", sans-serif;
+}
+
+.value-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .investment-wrap {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -387,13 +449,15 @@ main > section {
 
 @media (max-width: 980px) {
   .hero,
-  .about {
+  .about,
+  .manifesto {
     grid-template-columns: 1fr;
   }
 
   .proof-grid,
   .pillar-grid,
-  .investment-wrap {
+  .investment-wrap,
+  .value-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -410,7 +474,8 @@ main > section {
   .proof-grid,
   .pillar-grid,
   .deliverable-grid,
-  .investment-wrap {
+  .investment-wrap,
+  .value-grid {
     grid-template-columns: 1fr;
   }
 
