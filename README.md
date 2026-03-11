@@ -1,15 +1,24 @@
-# Mentoria Impulse | Plano Diamond
+# Mentoria Diamond
 
-Landing page estática da apresentação da Mentoria Impulse (Plano Diamond).
+Landing page estática da apresentação da Mentoria Diamond.
 
-## Link web
+## Publicação sem alterar a raiz do site
 
-- https://asilva-art.github.io/mentoria-impulse-plano-diamond/
+Se o domínio principal já está em outro servidor (WordPress), publique apenas esta pasta:
 
-## Estrutura
+- `apresentacoes-produto-diamond/`
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `assets/`
+No servidor, o destino esperado é:
 
+- `public_html/apresentacoes-produto-diamond/`
+
+URL final esperada:
+
+- `https://www.escritorionoazul.com.br/apresentacoes-produto-diamond/`
+
+## Estrutura da pasta publicada
+
+- `apresentacoes-produto-diamond/index.html`
+- `apresentacoes-produto-diamond/styles.css`
+- `apresentacoes-produto-diamond/script.js`
+- `apresentacoes-produto-diamond/assets/`
